@@ -38,7 +38,7 @@ export class SpeechRecognitionService {
       this.recognition = new SpeechRecognitionConstructor();
       this.currentLanguage = lang;
       this.recognition.lang = lang;
-      this.recognition.continuous = true;
+      this.recognition.continuous = false; // Changed to false for better stability
       this.recognition.interimResults = true;
       this.recognition.maxAlternatives = 1;
 
